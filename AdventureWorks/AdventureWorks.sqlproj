@@ -222,5 +222,6 @@
     <Build Include="Sales\XMLSchemaCollections\StoreSurveySchemaCollection.sql" />
     <Build Include="ExtendedProperties.sql" />
     <Build Include="dbo\Stored Procedures\CITest.sql" />
+    <Build Include="dbo\Stored Procedures\CICDTest.sql" />
   </ItemGroup>
 </Project>
