@@ -223,5 +223,6 @@
     <Build Include="ExtendedProperties.sql" />
     <Build Include="dbo\Stored Procedures\CITest.sql" />
     <Build Include="dbo\Stored Procedures\CICDTest.sql" />
+    <Build Include="dbo\Stored Procedures\ACICDTEST.sql" />
   </ItemGroup>
 </Project>
