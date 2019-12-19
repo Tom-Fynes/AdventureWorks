@@ -86,6 +86,8 @@
     <Folder Include="HumanResources\XMLSchemaCollections\" />
     <Folder Include="Production\XMLSchemaCollections\" />
     <Folder Include="Sales\XMLSchemaCollections\" />
+    <Folder Include="AgentJobs" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Sales\Tables\SalesTaxRate.sql" />
@@ -224,5 +226,8 @@
     <Build Include="dbo\Stored Procedures\CITest.sql" />
     <Build Include="dbo\Stored Procedures\CICDTest.sql" />
     <Build Include="dbo\Stored Procedures\ACICDTEST.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
