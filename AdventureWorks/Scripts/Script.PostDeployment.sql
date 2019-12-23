@@ -9,6 +9,14 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+
+IF (EXISTS (SELECT * 
+                 FROM INFORMATION_SCHEMA.TABLES 
+                 WHERE TABLE_SCHEMA = 'dbo' 
+                 AND  TABLE_NAME = 'PostDeploymentTable'))
+BEGIN
+    DROP TABLE [dbo].[PostDeploymentTable]
+END
 Create Table dbo.PostDeploymentTable
 (
 	TableID int Identity(1,1)Primary Key,
