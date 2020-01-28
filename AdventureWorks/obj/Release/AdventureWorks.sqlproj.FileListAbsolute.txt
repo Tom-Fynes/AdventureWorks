@@ -1,0 +1,3 @@
+C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Release\AdventureWorks.sqlprojResolveAssemblyReference.cache
+C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Release\AdventureWorks.dll
+C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Release\AdventureWorks.pdb
