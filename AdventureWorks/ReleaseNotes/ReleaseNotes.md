@@ -31,16 +31,16 @@ This release contains a switch in how the code is stored moving from sql files t
 ## Included functionality
 
 *	**Administration**.
-    *	Add database to Availability Group.
-    *	Backup a whole database.
-    *	Backup a database log.
-    *	Audit of all SQL Server database files on a drive of the server (regardless of if mounted).
-    *	Database Snapshot Creation (used by EMISIQ Extraction Automation Tool).
-    *	Database deletion.
-    *	Database Snapshot Deletion (used by EMISIQ Extraction Automation Tool).
-    *	Functionality to identify unmounted database files.
-    *	Remove database from Availability Group.
-    *	Restore database.
+		*	Add database to Availability Group.
+		*	Backup a whole database.
+		*	Backup a database log.
+		*	Audit of all SQL Server database files on a drive of the server (regardless of if mounted).
+		*	Database Snapshot Creation (used by EMISIQ Extraction Automation Tool).
+		*	Database deletion.
+		*	Database Snapshot Deletion (used by EMISIQ Extraction Automation Tool).
+		*	Functionality to identify unmounted database files.
+		*	Remove database from Availability Group.
+		*	Restore database.
 *	**Audit**.
     *	Tracing for all EMISGROUP or PURPLE account actions, or system initiated actions that exceed defined thresholds.
     *	Functionality to elevate SQL Write group permissions in the Quiet Period window for patching interventions that may be required.
