@@ -236,6 +236,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\AgentJobs\TestScript.sql" />
+    <None Include="ReleaseNotes\ReleaseNotes2.md" />
     <None Include="ReleaseNotes\ReleaseNotes.md" />
   </ItemGroup>
 </Project>
