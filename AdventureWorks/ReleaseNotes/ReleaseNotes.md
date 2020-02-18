@@ -30,7 +30,7 @@ This release contains a switch in how the code is stored moving from sql files t
 
 ## Included functionality
 
-*	Administration.
+*	**Administration**.
     *	Add database to Availability Group.
     *	Backup a whole database.
     *	Backup a database log.
@@ -41,7 +41,7 @@ This release contains a switch in how the code is stored moving from sql files t
     *	Functionality to identify unmounted database files.
     *	Remove database from Availability Group.
     *	Restore database.
-*	Audit.
+*	**Audit**.
     *	Tracing for all EMISGROUP or PURPLE account actions, or system initiated actions that exceed defined thresholds.
     *	Functionality to elevate SQL Write group permissions in the Quiet Period window for patching interventions that may be required.
 *	Configuration.
@@ -56,7 +56,7 @@ This release contains a switch in how the code is stored moving from sql files t
     *	Enable/disable email alerts for pertinent error messages.
     *	Stop overrunning EMISGroupDBA SQL Server Agent Jobs.
     *	cycling of agent logs
-*	Maintenance.
+*	**Maintenance**.
     *	Automated CheckDB.
     *	Automated Error Log cycling.
     *	Deletion of Backup and Restore history after Archive Age (configurable) days.
@@ -69,7 +69,7 @@ This release contains a switch in how the code is stored moving from sql files t
     *	Automated shrinking of Transaction Log files (configurable threshold).
     *	Automated killing of maintenance when Transaction Log drives come under space pressure.
     *	Automated update of statistics.
-*	Monitoring.
+*	**Monitoring**.
     *	Collection of Wait Statistics.
     *	Automatic emailing of pertinent error messages (if enabled).
     *	Collection of AlwaysOn Replica Role, Replication Mode and Failover Mode for all Availability Groups on the instance.
@@ -78,9 +78,9 @@ This release contains a switch in how the code is stored moving from sql files t
     *	Collection of Memory usage counters.
     *	Collection of Operating System Resource usage counters.
     *	Collection of TempDB space usage couters.
-*	Performance.
+*	**Performance**.
     *	A Release Assessment tool to compare current performance to a baseline date and time. This functionality is disabled by default.
-*	Reporting.
+*	**Reporting**.
     *	Collection of Mount Point space usage.
     *	Collection of database space usage.
     *	Logging of missed SQL Server database Backups.
