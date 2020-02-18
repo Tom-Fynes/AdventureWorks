@@ -89,6 +89,7 @@
     <Folder Include="AgentJobs" />
     <Folder Include="Scripts" />
     <Folder Include="Scripts\AgentJobs" />
+    <Folder Include="ReleaseNotes" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Sales\Tables\SalesTaxRate.sql" />
@@ -235,5 +236,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\AgentJobs\TestScript.sql" />
+    <None Include="ReleaseNotes\ReleaseNotes.md" />
   </ItemGroup>
 </Project>
