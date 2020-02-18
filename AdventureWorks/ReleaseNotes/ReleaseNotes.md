@@ -11,7 +11,7 @@
 
 # Document purpose
 
-This document is produced as a release note for the **${releaseDetails.name}** as a result of a release that has been signed off by internal testing.
+This document is produced as a release note for the **${releaseDetails.releaseDefinition.name}** as a result of a release that has been signed off by internal testing.
 
 The release of this document signifies the readiness of the release to be deployed as it is considered a release candidate.
 
@@ -109,7 +109,7 @@ This section details the deployment instructions. This information is provided b
 
 |Product| Deployment Details  |
 |--|--|
-| ${releaseDetails.name} |  Deploy using DacPac Powershell script|
+| ${releaseDetails.releaseDefinition.name} |  Deploy using DacPac Powershell script|
 
 
 ## Sign off
