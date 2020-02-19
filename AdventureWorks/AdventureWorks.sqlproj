@@ -238,6 +238,5 @@
     <None Include="Scripts\AgentJobs\TestScript.sql" />
     <None Include="ReleaseNotes\ReleaseNotes.md" />
     <None Include="ReleaseNotes\Template.md" />
-    <None Include="ReleaseNotes\ReleaseNOtes.htm" />
   </ItemGroup>
 </Project>
