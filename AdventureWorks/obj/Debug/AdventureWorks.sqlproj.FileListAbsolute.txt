@@ -2,9 +2,5 @@ C:\MyProjects\SQL\AdventureWorks\AdventureWorks\bin\Debug\AdventureWorks.dacpac
 C:\MyProjects\SQL\AdventureWorks\AdventureWorks\bin\Debug\AdventureWorks.dll
 C:\MyProjects\SQL\AdventureWorks\AdventureWorks\bin\Debug\AdventureWorks.pdb
 C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Debug\AdventureWorks.sqlprojAssemblyReference.cache
-C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Debug\Model.xml
-C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Debug\refactor.xml
-C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Debug\postdeploy.sql
-C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Debug\predeploy.sql
 C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Debug\AdventureWorks.dll
 C:\MyProjects\SQL\AdventureWorks\AdventureWorks\obj\Debug\AdventureWorks.pdb
