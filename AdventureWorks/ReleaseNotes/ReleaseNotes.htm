@@ -26,9 +26,7 @@
 <li>
     <b>
         Issues closed
-
-        @@WILOOP@@
-        ${widetail.fields['System.WorkItemType']} ${widetail.id}  Assigned by: ${widetail.fields['System.AssignedTo']}  ${widetail.fields['System.Title']}
+        <b>$($widetail.fields.'System.WorkItemType') $($widetail.id)</b> [Assigned by: $($widetail.fields.'System.AssignedTo'.displayName)] $($widetail.fields.'System.Title')
         @@WILOOP@@
     </b>
 
