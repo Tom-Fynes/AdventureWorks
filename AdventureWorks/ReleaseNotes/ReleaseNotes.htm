@@ -4,19 +4,71 @@
 <b>Release completed</b> ${releaseDetails.modifiedOn}
 <br>
 
-<b>Changes since last successful releases to ${releaseDetails.releaseDefinition.name}</b> </br>
+<h3>Document purpose</h3>
+<p>
+    This document is produced as a release note for the <b>${releaseDetails.releaseDefinition.name}</b> as a result of a release that has been signed off by internal testing.
+
+    The release of this document signifies the readiness of the release to be deployed as it is considered a release candidate.
+
+    It is imperative that all content in this document is read in full before attempting deployment of any components contained within the release package.
+</p>
+
+<h3>Summary of release</h3>
+<p>
+    This release contains a switch in how the code is stored moving from sql files to a database project. There is also a number of issues fixes
+</p>
+
+<b>Changes since last successful releases to ${releaseDetails.releaseDefinition.name}</b> 
 <b>Including releases:</b>
 
 <h3>Associated work items  </h3>
 @@WILOOP@@
 <li>
-    <b>$($widetail.fields.'System.WorkItemType') $($widetail.id)</b> [Assigned by: $($widetail.fields.'System.AssignedTo'.displayName)] $($widetail.fields.'System.Title')
-    @@WILOOP@@
+    <b>
+        Issues closed
 
-    <h3>Associated change sets/commits </h3>
-    @@CSLOOP@@
+        @@WILOOP@@
+        * ** ${widetail.fields['System.WorkItemType']} ${widetail.id} ** Assigned by: ${widetail.fields['System.AssignedTo']}  ${widetail.fields['System.Title']}
+        @@WILOOP@@
+    </b>
+
 <li>
-    <b>ID $($csdetail.changesetid)$($csdetail.commitid)$($csdetail.id)</b> $($csdetail.comment)
-    @@CSLOOP@@
-    <hr>
-    @@BUILDLOOP@@
+
+
+<h3>New Functionality</h3>
+
+
+<h3>Release overview</h3>
+
+
+<h3>Release details</h3>
+
+<p>
+    The release can be collected from Group Team Foundation Server in the Hosted Collection under the following path:
+
+    [https://github.com/emisgroup/dba-groupmanagement-database/releases](https://github.com/emisgroup/dba-groupmanagement-database/releases)
+</p>
+
+<h3>Release dependencies</h3>
+
+    None
+
+
+    ## Release deployment
+
+    This section details the deployment instructions. This information is provided by Development. If there are any problems, refer to the Development contact listed in the release overview.
+
+
+    |Product| Deployment Details  |
+    |--|--|
+    | ${releaseDetails.releaseDefinition.name} |  Deploy using DacPac Powershell script|
+
+
+    ## Sign off
+
+    |Testing Carried out by| Thomas Fynes |
+    |--|--|
+    | **Approvals** | **Name**  |
+    |Test lead approval| Thomas Fynes|
+    |Dev Lead approval|Thomas Fynes   |
+    |Release approval| Thomas Fynes  |
