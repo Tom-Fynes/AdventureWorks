@@ -18,19 +18,28 @@
     This release contains a switch in how the code is stored moving from sql files to a database project. There is also a number of issues fixes
 </p>
 
-<b>Changes since last successful releases to ${releaseDetails.releaseDefinition.name}</b> 
+<b>Changes since last successful releases to ${releaseDetails.releaseDefinition.name}</b>
 <b>Including releases:</b>
+
+<h3>Associated work items  </h3>
+@@BUILDLOOP@@
+<h3>$($build.definition.name) </h3>
+<b>Build Number</b>  : $($build.buildnumber)
+<b>Source Branch</b> $($build.sourceBranch)
 
 <h3>Associated work items  </h3>
 @@WILOOP@@
 <li>
-    <b>
-        Issues closed
-        <b>$($widetail.fields.'System.WorkItemType') $($widetail.id)</b> [Assigned by: $($widetail.fields.'System.AssignedTo'.displayName)] $($widetail.fields.'System.Title')
-        @@WILOOP@@
-    </b>
+    <b>$($widetail.fields.'System.WorkItemType') $($widetail.id)</b> [Assigned by: $($widetail.fields.'System.AssignedTo'.displayName)] $($widetail.fields.'System.Title')
+    @@WILOOP@@
 
+    <h3>Associated change sets/commits </h3>
+    @@CSLOOP@@
 <li>
+    <b>ID $($csdetail.changesetid)$($csdetail.commitid)$($csdetail.id)</b> $($csdetail.comment)
+    @@CSLOOP@@
+    <hr>
+    @@BUILDLOOP@@
 
 
 <h3>New Functionality</h3>
