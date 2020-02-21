@@ -1,0 +1,22 @@
+<h1>Release notes for release  ${releaseDetails.releaseDefinition.name}</h1>
+<b>Release Number</b>  : ${releaseDetails.name}
+<br>
+<b>Release completed</b> ${releaseDetails.modifiedOn}
+<br>
+
+<b>Changes since last successful releases to ${releaseDetails.releaseDefinition.name}</b> </br>
+<b>Including releases:</b>
+
+<h3>Associated work items  </h3>
+@@WILOOP@@
+<li>
+    <b>$($widetail.fields.'System.WorkItemType') $($widetail.id)</b> [Assigned by: $($widetail.fields.'System.AssignedTo'.displayName)] $($widetail.fields.'System.Title')
+    @@WILOOP@@
+
+    <h3>Associated change sets/commits </h3>
+    @@CSLOOP@@
+<li>
+    <b>ID $($csdetail.changesetid)$($csdetail.commitid)$($csdetail.id)</b> $($csdetail.comment)
+    @@CSLOOP@@
+    <hr>
+    @@BUILDLOOP@@
