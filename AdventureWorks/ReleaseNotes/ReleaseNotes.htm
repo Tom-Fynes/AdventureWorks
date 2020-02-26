@@ -1,11 +1,12 @@
-<h1 >Release notes for release  ${releaseDetails.releaseDefinition.name} </h1>
+<h1>Release notes for release  ${releaseDetails.releaseDefinition.name} </h1>
 <b>Release Number :</b>  : ${releaseDetails.name}
 <br>
 <b>Release completed :</b> ${releaseDetails.modifiedOn}
 <br>
 <b>Compared Release Number  :</b>  ${compareReleaseDetails.name}
 
-<h3 >Document purpose</h3>
+<h3>Document purpose</h3>
+
 <p>
     This document is produced as a release note for the <b>${releaseDetails.releaseDefinition.name}</b> as a result of a release that has been signed off by internal testing.
 
@@ -14,7 +15,8 @@
     It is imperative that all content in this document is read in full before attempting deployment of any components contained within the release package.
 </p>
 
-<h3 >Summary of release</h3>
+<h3>Summary of release</h3>
+
 <p>
     This release contains a switch in how the code is stored moving from sql files to a database project. There is also a number of issues fixes
 </p>
@@ -22,19 +24,28 @@
 <b>Changes since last successful releases to ${releaseDetails.releaseDefinition.name}</b>
 <b>Including releases:</b>
 
-<h3 >Associated work items  </h3>
+<h3>Associated work items  </h3>
+
+<p>
+    @@WILOOP@@
+    <b> ${widetail.fields['System.WorkItemType']} ${widetail.id} </b> <b>Assigned by: ${widetail.fields['System.AssignedTo']}  ${widetail.fields['System.Title']} </b>
+    @@WILOOP@@
+</p>
+
+<h3>New Functionality</h3>
+
+<p>
+    None
+</p>
+
+<h3>Release overview</h3>
+
+<p>
+    Database soultion for maintaining and reporting on Environments. 
+</p>
 
 
-<h3 >Associated work items  </h3>
-
-
-<h3 >New Functionality</h3>
-
-
-<h3 >Release overview</h3>
-
-
-<h3 >Release details</h3>
+<h3>Release details</h3>
 
 <p>
     The release can be collected from Group Team Foundation Server in the Hosted Collection under the following path:
@@ -42,5 +53,9 @@
     [https://github.com/emisgroup/dba-groupmanagement-database/releases](https://github.com/emisgroup/dba-groupmanagement-database/releases)
 </p>
 
-<h3 >Release dependencies</h3>
+<h3>Release dependencies</h3>
+
+<p>
+    None
+</p>
 
