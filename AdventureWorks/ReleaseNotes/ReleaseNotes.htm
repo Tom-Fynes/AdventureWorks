@@ -22,24 +22,13 @@
 <b>Including releases:</b>
 
 <h3 style="color:green">Associated work items  </h3>
-@@BUILDLOOP@@
+
 <h3 style="color:green">$($build.definition.name) </h3>
 <b>Build Number</b>  : $($build.buildnumber)
 <b>Source Branch</b> $($build.sourceBranch)
 
 <h3 style="color:green">Associated work items  </h3>
-@@WILOOP@@
-<li>
-    <b>$($widetail.fields.'System.WorkItemType') $($widetail.id)</b> [Assigned by: $($widetail.fields.'System.AssignedTo'.displayName)] $($widetail.fields.'System.Title')
-    @@WILOOP@@
 
-    <h3 style="color:green">Associated change sets/commits </h3>
-    @@CSLOOP@@
-<li>
-    <b>ID $($csdetail.changesetid)$($csdetail.commitid)$($csdetail.id)</b> $($csdetail.comment)
-    @@CSLOOP@@
-    <hr>
-    @@BUILDLOOP@@
 
 
 <h3 style="color:green">New Functionality</h3>
