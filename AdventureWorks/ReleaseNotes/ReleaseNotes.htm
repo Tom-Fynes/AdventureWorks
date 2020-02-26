@@ -27,9 +27,9 @@
 <h3>Associated work items  </h3>
 
 <p>
-    @@WILOOP@@
+    @@WILOOP@@[ANY]
     <b> ${widetail.fields['System.WorkItemType']} ${widetail.id} </b> <b>Assigned by: ${widetail.fields['System.AssignedTo']}  ${widetail.fields['System.Title']} </b>
-    @@WILOOP@@
+    @@WILOOP@@[ANY]
 </p>
 
 <h3>New Functionality</h3>
@@ -41,7 +41,7 @@
 <h3>Release overview</h3>
 
 <p>
-    Database soultion for maintaining and reporting on Environments. 
+    Database soultion for maintaining and reporting on Environments.
 </p>
 
 
@@ -57,5 +57,13 @@
 
 <p>
     None
+</p>
+
+<h3>Associated Commits</h3>
+
+<p>
+    @@CSLOOP@@[ANY]
+    <b>ID ${csdetail.id}</b> : <b>${csdetail.message}</b>
+    @@CSLOOP@@[ANY]
 </p>
 
