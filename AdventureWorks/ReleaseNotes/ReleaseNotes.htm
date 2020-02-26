@@ -27,9 +27,9 @@
 <h3>Associated work items  </h3>
 
 <p>
-    @@WILOOP@@[ANY]
+    @@WILOOP@@
     <b> ${widetail.fields['System.WorkItemType']} ${widetail.id} </b> <b>Assigned by: ${widetail.fields['System.AssignedTo']}  ${widetail.fields['System.Title']} </b>
-    @@WILOOP@@[ANY]
+    @@WILOOP@@
 </p>
 
 <h3>New Functionality</h3>
@@ -62,8 +62,8 @@
 <h3>Associated Commits</h3>
 
 <p>
-    @@CSLOOP@@[ANY]
+    @@CSLOOP@@
     <b>ID ${csdetail.id}</b> : <b>${csdetail.message}</b>
-    @@CSLOOP@@[ANY]
+    @@CSLOOP@@
 </p>
 
