@@ -230,6 +230,7 @@
     <Build Include="dbo\Stored Procedures\ACICDTEST.sql" />
     <Build Include="HumanResources\Stored Procedures\FindPeeps.sql" />
     <Build Include="dbo\Stored Procedures\TetingCICD.sql" />
+    <Build Include="HumanResources\Stored Procedures\PhilDemo.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
