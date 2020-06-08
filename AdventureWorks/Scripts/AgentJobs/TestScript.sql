@@ -28,7 +28,7 @@ execute msdb.dbo.sp_add_job
 	@delete_level = 0,
 	@description = N'Job to initiate and maintain Audit information.',
 	@category_name = N'[Uncategorized (Local)]',
-	@owner_login_name = N'',
+	
 	@job_id = @jobId output;
 go
 
@@ -162,7 +162,7 @@ if not exists (select name from msdb.dbo.sysoperators where name = N'SQL Job Fai
 		@delete_level = 0,
 		@description = N'Job to initiate and maintain Audit information.',
 		@category_name = N'[Uncategorized (Local)]',
-		@owner_login_name = N'',
+		
 		@notify_netsend_operator_name = N'',
 		@notify_page_operator_name = N'';
 end
@@ -178,7 +178,7 @@ else if exists (select name from msdb.dbo.sysoperators where name = N'SQL Job Fa
 		@delete_level = 0,
 		@description = N'Job to initiate and maintain Audit information.',
 		@category_name = N'[Uncategorized (Local)]',
-		@owner_login_name = N'',
+		
 		@notify_email_operator_name = N'SQL Job Failure',
 		@notify_netsend_operator_name = N'',
 		@notify_page_operator_name = N'';
