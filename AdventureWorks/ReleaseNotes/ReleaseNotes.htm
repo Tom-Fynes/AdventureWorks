@@ -30,6 +30,10 @@
     @@WILOOP@@
     <b> ${widetail.fields['System.WorkItemType']} ${widetail.id} </b> <b>Assigned by: ${widetail.fields['System.AssignedTo']}  ${widetail.fields['System.Title']} </b>
     @@WILOOP@@
+    
+    @@WILOOP@@
+    #$($widetail.id) [Assigned by: $($widetail.fields.'System.AssignedTo'.displayName)] $($widetail.fields.'System.Title')
+    @@WILOOP@@
 </p>
 
 <h3>New Functionality</h3>
@@ -67,7 +71,7 @@
     @@CSLOOP@@
     
     @@CSLOOP@@
-    [$($csdetail.commitid.substring(0,7))](https://dev.azure.com/{org}/{project}/_git/{repo}/commit/$($csdetail.commitid)) $($csdetail.comment)
+    [$($csdetail.commitid.substring(0,7))](https://github.com/Tom-Fynes/AdventureWorks/commit/$($csdetail.commitid)) $($csdetail.comment)
     @@CSLOOP@@
 
 </p>
