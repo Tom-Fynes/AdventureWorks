@@ -65,6 +65,10 @@
     @@CSLOOP@@
     <b>ID ${csdetail.id}</b> : <b>${csdetail.message}</b>
     @@CSLOOP@@
+    
+    @@CSLOOP@@
+    [$($csdetail.commitid.substring(0,7))](https://dev.azure.com/{org}/{project}/_git/{repo}/commit/$($csdetail.commitid)) $($csdetail.comment)
+    @@CSLOOP@@
 
 </p>
 
