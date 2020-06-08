@@ -49,7 +49,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -235,7 +234,6 @@
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\AgentJobs\TestScript.sql" />
     <None Include="ReleaseNotes\ReleaseNotes.md" />
     <None Include="ReleaseNotes\Template.md" />
     <None Include="ReleaseNotes\ReleaseNotes.htm" />
